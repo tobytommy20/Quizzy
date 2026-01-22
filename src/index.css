@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fb;
+  color: #293264;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.blob.yellow {
+  width: 300px;
+  height: 300px;
+  background-color: #fffad1;
+  top: -120px;
+  right: -150px;
+}
+
+.blob.blue {
+  width: 300px;
+  height: 300px;
+  background-color: #deebf8;
+  bottom: -150px;
+  left: -140px;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.start-screen {
+  z-index: 1;
+  text-align: center;
+}
+
+.start-screen h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.start-screen p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.start-screen button {
+  background-color: #4d5b9e;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 16px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quiz-screen {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  z-index: 1;
+}
+
+.question-block {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dbdef0;
+}
+
+.question-block h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.answers {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.answer-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #4d5b9e;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.answer-btn.selected {
+  background-color: #d6dbf5;
+}
+
+.answer-btn.correct {
+  background-color: #94d7a2;
+  border-color: #94d7a2;
+  color: rgb(24, 4, 4);
+  font-weight: 700;
+}
+
+.answer-btn.wrong {
+  background-color: #f8bcbc;
+  border-color: #f8bcbc;
+}
+
+.answer-btn.dimmed {
+  opacity: 0.5;
+}
+
+.quiz-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz-footer button {
+  background-color: #4d5b9e;
+  margin: auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 30px;
+  cursor: pointer;
+}
